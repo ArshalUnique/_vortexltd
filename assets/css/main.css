@@ -19,8 +19,8 @@
 /* Colors */
 :root {
   --color-default: #364d59;
-  --color-primary: #feb900;
-  --color-secondary: #52565e;
+  --color-primary: #978D58; 
+  --color-secondary: #414141;
 }
 
 /* Smooth scroll behavior */
@@ -1672,7 +1672,7 @@ section {
   line-height: 0;
   color: var(--color-primary);
   border-radius: 50%;
-  border: 2px dotted #ffd565;
+  border: 2px dotted var(--color-primary);
 }
 
 .contact .info-item h3 {
@@ -1772,7 +1772,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(254, 185, 0, 0.8);
+  background: var(--color-secondary);
 }
 
 @keyframes animate-loading {
