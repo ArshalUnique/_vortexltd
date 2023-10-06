@@ -187,9 +187,10 @@ section {
   line-height: 0;
 }
 
-.scroll-top:hover {
-  background: #ffc732;
-  color: #fff;
+.scroll-top i:hover {
+  background: var(--color-secondary);
+  color:var(--color-primary);
+  
 }
 
 .scroll-top.active {
@@ -1670,9 +1671,9 @@ section {
   height: 56px;
   font-size: 24px;
   line-height: 0;
-  color: var(--color-primary);
+  color: var(--color-secondary.scroll-top i );
   border-radius: 50%;
-  border: 2px dotted var(--color-primary);
+  border: 2px solid var(--color-primary);
 }
 
 .contact .info-item h3 {
