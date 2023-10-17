@@ -74,6 +74,20 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   });
 
+  // sticky navbar fixed on the top
+
+  window.onscroll = function () {
+    const navbar = document.querySelector('header#header.header.d-flex.align-items-center');
+    if (window.scrollY > 0) {
+        navbar.style.position = "fixed";
+        navbar.style.top = "0";
+        navbar.classList.add("sticky"); // Add a class for the transition effect
+    } else {
+      navbar.classList.remove("sticky"); // Remove the sticky class
+
+    }
+};
+
   /**
    * Scroll top button
    */
